@@ -7,10 +7,15 @@
 body {
   background: #fff;
   font-family: sans-serif;
-  height: 50vh;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 body .container {
+  flex: 1;
 }
 
 .container {
@@ -19,8 +24,25 @@ body .container {
 }
 
 footer {
-  background-color: #201c5b;
+  background-color: #120962;
   color: #fff;
+  height: 50vh;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer hr {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  border: none;
+  border-top: 1px solid #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 footer a {
@@ -31,7 +53,7 @@ footer a {
 .footer .container .footer-imgs {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 60px 0 0 0;
   align-items: center;
   height: auto;
 }
@@ -62,6 +84,18 @@ footer a {
   padding: 30px;
 }
 
+h4 {
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-bottom: 5px;
+  /* border-bottom: #fff solid 1px; */
+}
+
+h4 .underline {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #fff;
+}
+
 .footer-links ul {
   list-style: none;
   display: flex;
@@ -80,7 +114,7 @@ footer a {
   margin-bottom: 5px;
   border: #fff 1px solid;
   border-radius: 5px;
-  background: #201c5b;
+  background: #120962;
 }
 
 .subscribe {
@@ -96,8 +130,15 @@ button {
 }
 
 .copyright {
-  background-color: #2117a2;
+  background-color: #0a0445;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  width: 100vw;
+}
+
+.copyright .container{
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
 }
